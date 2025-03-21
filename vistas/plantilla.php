@@ -33,19 +33,32 @@
 <?php
     include "modulos/cabezotetmp.php";
     include "modulos/menu.php";
-    include "modulos/footer.php";
-    include "modulos/inicio.php";
-    include "modulos/solicitudes_v.php";
-    include "modulos/salidas.php";
-    include "modulos/reserva.php";
-    include "modulos/usuarios.php";
-    include "modulos/solicitud_v.php";
-    include "modulos/salidas.php";
-    include "modulos/autorizaciones.php";
-    include "modulos/permisos.php";
-    include "modulos/reportes.php";
-    include "modulos/recepcion.php";
-    include "modulos/inventario.php";
+   
+  
+    
+
+    if (isset($_GET["ruta"])) {
+        if ($_GET["ruta"] == "inicio" ||
+            $_GET["ruta"] == "usuarios" ||
+            $_GET["ruta"] == "permisos" ||
+            $_GET["ruta"] == "inventario" ||
+            $_GET["ruta"] == "recepcion" ||
+            $_GET["ruta"] == "reserva" ||
+            $_GET["ruta"] == "inmediata" ||
+            $_GET["ruta"] == "autorizaciones" ||
+            $_GET["ruta"] == "solicitud_v" ||
+            $_GET["ruta"] == "devoluciones" ||
+            $_GET["ruta"] == "salidas" ||
+            $_GET["ruta"] == "reportes" ||
+            $_GET["ruta"] == "salir") {
+              
+            include "modulos/".$_GET["ruta"].".php";
+        } else {
+            include "modulos/error404.php";
+        }
+    } else {
+        include "modulos/footer.php";
+    }
 
 
 
