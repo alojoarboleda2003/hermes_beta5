@@ -23,41 +23,52 @@
 
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini login-page">
 
-<!-- Site wrapper -->
-<div class="wrapper">
+
 
 </div>
 
 <?php
-    include "modulos/cabezotetmp.php";
-    include "modulos/menu.php";
-   
-  
-    
 
-    if (isset($_GET["ruta"])) {
-        if ($_GET["ruta"] == "inicio" ||
-            $_GET["ruta"] == "usuarios" ||
-            $_GET["ruta"] == "permisos" ||
-            $_GET["ruta"] == "inventario" ||
-            $_GET["ruta"] == "recepcion" ||
-            $_GET["ruta"] == "reserva" ||
-            $_GET["ruta"] == "inmediata" ||
-            $_GET["ruta"] == "autorizaciones" ||
-            $_GET["ruta"] == "solicitud" ||
-            $_GET["ruta"] == "devoluciones" ||
-            $_GET["ruta"] == "salidas" ||
-            $_GET["ruta"] == "reportes" ||
-            $_GET["ruta"] == "salir") {
-              
-            include "modulos/".$_GET["ruta"].".php";
-        } else {
-            include "modulos/error404.php";
+    if (isset($_SESSION["iniciarsesion"]) && $_SESSION["iniciarsesion"] == "ok") {
+        echo '<div class="wrapper">';
+            
+        
+
+        include "modulos/cabezotetmp.php";
+        include "modulos/menu.php";
+    
+    
+        
+
+        if (isset($_GET["ruta"])) {
+            if ($_GET["ruta"] == "inicio" ||
+                $_GET["ruta"] == "usuarios" ||
+                $_GET["ruta"] == "permisos" ||
+                $_GET["ruta"] == "inventario" ||
+                $_GET["ruta"] == "recepcion" ||
+                $_GET["ruta"] == "reserva" ||
+                $_GET["ruta"] == "inmediata" ||
+                $_GET["ruta"] == "autorizaciones" ||
+                $_GET["ruta"] == "solicitud" ||
+                $_GET["ruta"] == "devoluciones" ||
+                $_GET["ruta"] == "salidas" ||
+                $_GET["ruta"] == "reportes" ||
+                $_GET["ruta"] == "salir") {
+                
+                include "modulos/".$_GET["ruta"].".php";
+            } else {
+                include "modulos/error404.php";
+            }
         }
+        include "modulos/footer.php";
+        echo '</div>';
+
+    } else {
+        include "modulos/login.php";
     }
-      include "modulos/footer.php";
+
     
 
 
