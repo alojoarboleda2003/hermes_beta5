@@ -50,7 +50,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="usuarios" class="nav-link">
                   
                   <p>Usuarios</p>
                 </a>
@@ -58,7 +58,7 @@
             </ul>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="permisos" class="nav-link">
                   
                   <p>Permisos</p>
                 </a>
@@ -77,14 +77,14 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="inventario" class="nav-link">
                   
                   <p>Inventario</p>
                 </a>
               </li>
               
               <li class="nav-item">
-                <a href="../layout/fixed-topnav.html" class="nav-link">
+                <a href="recepcion" class="nav-link">
                   
                   <p>Recepcion/Traspaso</p>
                 </a>
@@ -103,14 +103,14 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="reserva" class="nav-link">
                   
                   <p>Reserva</p>
                 </a>
               </li>
               
               <li class="nav-item">
-                <a href="../layout/fixed-topnav.html" class="nav-link">
+                <a href="inmediata" class="nav-link">
                   
                   <p>Inmediata</p>
                 </a>
@@ -129,14 +129,14 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="autorizaciones" class="nav-link">
                   
                   <p>Autorizaciones</p>
                 </a>
               </li>
               
               <li class="nav-item">
-                <a href="../layout/fixed-topnav.html" class="nav-link">
+                <a href="solicitud" class="nav-link">
                   
                   <p>Solicitudes Vencidas</p>
                 </a>
@@ -145,7 +145,7 @@
         </li>
 
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="devoluciones" class="nav-link">
               <i class="fas fa-arrow-left"></i>
               <p>
                 Devoluciones
@@ -156,7 +156,7 @@
         </li>
 
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="salidas" class="nav-link">
               <i class="fas fa-sign-out-alt"></i>
               <p>
                 Salidas            
@@ -167,7 +167,7 @@
         </li>
 
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="reportes" class="nav-link">
               <i class="fas fa-chart-bar"></i>
               <p>
                 Reportes

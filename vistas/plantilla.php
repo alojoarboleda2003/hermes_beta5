@@ -46,7 +46,7 @@
             $_GET["ruta"] == "reserva" ||
             $_GET["ruta"] == "inmediata" ||
             $_GET["ruta"] == "autorizaciones" ||
-            $_GET["ruta"] == "solicitud_v" ||
+            $_GET["ruta"] == "solicitud" ||
             $_GET["ruta"] == "devoluciones" ||
             $_GET["ruta"] == "salidas" ||
             $_GET["ruta"] == "reportes" ||
@@ -56,9 +56,9 @@
         } else {
             include "modulos/error404.php";
         }
-    } else {
-        include "modulos/footer.php";
     }
+      include "modulos/footer.php";
+    
 
 
 
