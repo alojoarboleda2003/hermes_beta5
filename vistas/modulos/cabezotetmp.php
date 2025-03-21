@@ -48,6 +48,20 @@
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fas fa-user"></i>
+        </a>
+
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">       
+          <a href="salir" class="dropdown-item">
+            <i class="fas fa-user mr-2"></i> Finalizar sesion
+          </a>
+        </div>
+      </li>
+          
+          
       
     </ul>
   </nav>
