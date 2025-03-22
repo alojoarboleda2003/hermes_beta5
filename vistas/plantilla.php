@@ -37,13 +37,9 @@
 
     if (isset($_SESSION["iniciarsesion"]) && $_SESSION["iniciarsesion"] == "ok") {
         echo '<script>
-            document.addEventListener("DOMContentLoaded", function(){
-                document.getElementById("login").style.display = "none";
-                
-            });
-            </script>';
-        
-        echo '<div class="wrapper">';
+        document.addEventListener("DOMContentLoaded", function(){
+            document.body.classList.remove("login-page");
+        }); </script>';
             
         
 
